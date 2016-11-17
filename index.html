@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html ng-app="raboStatProcessor">
+	<head>
+		<title>Rabobank Customer Statement Processor</title>	
+		<link rel="stylesheet" href="{{appsettings.css_path}}style.css"/>	
+	</head>
+	<body>		
+		<div class="container">		
+			<ng-view></ng-view>
+		</div>
+		
+		<script type="text/javascript" src="content/js/angular1.5.8.js"></script>
+		<script type="text/javascript" src="content/js/angular-route.1.5.8min.js"></script>
+		<script type="text/javascript" src="content/js/xml2json.js"></script>		
+		
+		<script type="text/javascript" src="scripts/app.js"></script>				
+		<script type="text/javascript" src="controllers/dataprocessor.js"></script>
+		<script type="text/javascript" src="services/appsettings.constant.js"></script>
+		<script type="text/javascript" src="services/datareader.factory.js"></script>		
+		<script type="text/javascript" src="services/dataValidator.service.js"></script>
+		<script type="text/javascript" src="directives/failedrecords.directive.js"></script>
+		<script type="text/javascript" src="filters/duplicaterecords.filters.js"></script>
+	</body>
+</html>

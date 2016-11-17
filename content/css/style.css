@@ -1,0 +1,13 @@
+*{ margin:0px auto;	padding:0px;}
+header{ margin: 16px 0 25px 5px;padding: 2px;}
+header > div{margin-bottom: 20px;}
+footer{  text-align: center;}
+.container{	width:970px;border:1px solid #ccc;}
+nav ul li{background: none repeat scroll 0 0 #000066;color: #ffffff;display: inline;padding: 9px;}
+section{min-height: 160px;padding: 6px;}
+.RecordList{padding: 10px;text-align: center;}
+.error{color:#ff0000;}
+table tr th{ background-color:#cceeff}
+table tr th,table tr td {border: 1px solid #ddd;padding: 8px;}
+tr:nth-child(odd){ background-color:#eee; }
+tr:nth-child(even){ background-color:#fff; }

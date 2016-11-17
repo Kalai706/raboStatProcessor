@@ -1,0 +1,10 @@
+<ng-include src="'views/layout/header.html'"></ng-include>
+<section>
+	<div>
+		<h3>Choose the file format which you want to validate </h3>
+		<span><input type="radio" value="CSV" ng-model="fileformat" ng-change='processValidation()'> CSV</span>
+		<span><input type="radio" value="XML" ng-model="fileformat" ng-change='processValidation()'> XML</span>
+	</div>
+	<failed-records></failed-records> 
+</section>
+<ng-include src="'views/layout/footer.html'"></ng-include>

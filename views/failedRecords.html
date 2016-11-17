@@ -1,0 +1,24 @@
+<div class="RecordList"><h2>Failure Record Detail</h2></div>
+<table border="1" CELLPADDING="0" CELLSPACING="0">
+	
+	<tr ng-if="records">
+		<th>Transaction Reference</th>
+		<th>Transaction Description</th>
+		<th>Failure Description</th>
+	</tr>
+	
+	<tr  ng-repeat="x in records | filter : {reference_status:false}">
+	  <td>{{x._reference}}</td>
+	  <td>{{x.description}}</td>
+	  <td>Duplicate Transaction Reference</td>
+	</tr>
+	
+	<tr ng-repeat="x in records | filter : {endbalance_status:false}">
+	  <td>{{x._reference}}</td>
+	  <td>{{x.description}}</td>
+	  <td>Clash with End balance</td>
+	</tr>
+	<tr colspan="3" ng-if="!records">
+		<td>No Record Found</td>
+	</tr>
+</table>
